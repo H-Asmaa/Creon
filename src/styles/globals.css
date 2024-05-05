@@ -1,0 +1,522 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer utilities {
+  .debug-pink {
+    @apply border border-pink-500;
+  }
+  .debug-yellow {
+    @apply border border-blue-500;
+  }
+  .debug-green {
+    @apply border border-green-500;
+  }
+}
+
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('../../public/fonts/MonumentExtended-Regular.woff2') format('opentype');
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+/* COSTUM */
+.Hero-section-paragraph {
+  position: absolute;
+  width: 580px;
+  height: 29px;
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 130%;
+  left: 10.5%;
+  padding-left: 0;
+  top: 90%;
+  background: linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Hero-section-paragraph::before,
+.Hero-section-paragraph::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  background: linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%);
+  height: 1px;
+}
+
+.Hero-section-paragraph::before {
+  top: 0;
+}
+
+.Hero-section-paragraph::after {
+  bottom: 0;
+}
+
+.section1 {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.section1 video {
+  height: 100vh;
+}
+
+
+.left-section {
+  display: flex;
+  width: 50%;
+  height: 100vh;
+  /* background-color: #3D8BFF; */
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.right-section {
+  display: flex;
+  width: 50%;
+  height: 100vh;
+  flex-wrap: wrap;
+  align-content: center;
+  /* background-color: #0f9f18; */
+}
+
+.left-section-content {
+  margin-left: 13%;
+}
+
+.left-section h1 {
+  font-style: normal;
+  font-Family: 'Monument Extended';
+  font-weight: 400;
+  font-size: 55px;
+  padding-left: 10%;
+  padding-right: 8%;
+  line-height: 60px;
+  margin-top: 10%;
+}
+
+.left-section-paragraph {
+  width: 580px;
+  height: 29px;
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 130%;
+  padding: 10px 68px 98px 57px;
+  background: linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.left-section button {
+  border: #AB23FF;
+  width: 428px;
+  height: 54px;
+  background: linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%);
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 110%;
+  margin: 5%;
+  margin-left: 10%;
+  text-align: center;
+}
+
+.left-section-cards {
+  margin-left: 10%;
+}
+
+.left-section-cards p {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 18px 16px;
+  width: fit-content;
+  height: 51px;
+  border: 1px solid #13171D;
+  border-radius: 6px;
+  margin-bottom: 4px;
+}
+
+.right-section video {
+  width: 808px;
+  height: 100vh;
+  top: calc(50% - 808px/2);
+}
+
+
+.section2 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+  /* background-color: #3D8BFF; */
+}
+
+.section2-headers {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 30%;
+  padding-top: 5%;
+  padding-left: 10%;
+}
+
+.section2-header {
+  width: 947px;
+  height: 75px;
+  font-family: 'Monument Extended';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.section2-header-sub {
+  width: 925px;
+  height: 46px;
+  font-family: 'Monument Extended';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 120%;
+  text-align: right;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-left: 20%;
+}
+
+.section2-sub {
+  display: flex;
+  /* background-color: #AB23FF; */
+  width: 100%;
+  height: 60%;
+}
+
+
+.section2-left {
+  display: flex;
+  width: 63%;
+  /* background-color: aqua; */
+  justify-content: flex-end;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.section2-left video {
+  width: 820px;
+  height: 430px;
+  border-radius: 6px;
+  padding-left: 13%;
+}
+
+.section2-right {
+  width: 33%;
+  /* background-color: blueviolet; */
+}
+
+.section2-right-text-box {
+  /* background-color: aquamarine; */
+  border: solid #13171D 1px;
+  margin-right: 20%;
+  height: 100%;
+  border-top: 0;
+  border-bottom: 0;
+  padding: 8%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+.section2-right-text-box h4 {
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 130%;
+  color: #FFFFFF;
+  padding-bottom: 10%;
+}
+
+.section2-right-text-box p {
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+
+.section3 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+  /* background-color: #3D8BFF; */
+}
+
+.section3-left {
+  width: 55%;
+  /* background-color: brown; */
+}
+
+.section3-left h2 {
+  position: relative;
+  width: 699px;
+  height: 322px;
+  font-family: 'Monument Extended';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-left: 16%;
+  padding-top: 10%;
+  z-index: 50;
+}
+
+.section3-left .creaon_img {
+  width: 600px;
+  height: 350px;
+  margin-left: 21%;
+  z-index: 0;
+}
+
+.section3-right {
+  width: 45%;
+  padding: 5%;
+  /* background-color: chartreuse; */
+}
+
+.section3-right-element {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  /* background-color: rgb(203, 142, 21); */
+}
+
+.section3-right-element svg {
+  width: 90px;
+  height: 95px;
+}
+
+.section3-right-element-text {
+  /* background-color: #3D8BFF; */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4%;
+  width: 75%;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.section3-right-element-text h4 {
+  height: 58px;
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.section3-right-element-text p {
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+
+.section3-right-element-text svg {
+  /* background-color: #0e2b57; */
+  width: 16px;
+  height: 16px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.section4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 100vh;
+  width: 100%;
+  padding-top: 8%;
+  padding-left: 6%;
+  padding-right: 6%;
+  /* background-color: #052351; */
+}
+
+.section4-element {
+  width: 30%;
+  height: 95%;
+  background: rgba(19, 23, 29, 0.6);
+  border-radius: 6px;
+}
+
+.section4-element h1 {
+  height: 46px;
+  font-family: 'Monument Extended';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 20px;
+}
+
+.section4-element-coming-soon {
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 110%;
+  text-align: center;
+  width: 102px;
+  margin-left: 65%;
+}
+
+.section4-element-description {
+  padding: 20px;
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 130%;
+  background: linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section4-element-paragraph {
+  padding: 20px;
+  height: 161px;
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+
+.section4-element-img {
+  width: 90%;
+  height: 35%;
+}
+
+.section5 {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  height: 150vh;
+  width: 100%;
+  /* background-color: aqua; */
+  align-content: space-around;
+  justify-content: center;
+  padding: 50px;
+}
+
+.section5-element {
+  position: relative;
+  display: flex;
+  background: rgba(19, 23, 29, 0.6);
+  border-radius: 6px;
+  width: 90%;
+  height: 30%;
+  border: #FFFFFF solid 1px;
+}
+
+.section5-element-img {
+  width: 30%;
+  height: 100%;
+}
+
+.section5-element-text {
+  padding: 20px;
+}
+
+.section5-element h3 {
+  font-family: 'Monument Extended';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.section5-element p {
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.footer .icons {
+  display: flex;
+  gap: 10pxs;
+}
+
+
