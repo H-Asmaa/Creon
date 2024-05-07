@@ -2,6 +2,7 @@ import market1 from '../../public/images/market1.png'
 import market2 from '../../public/images/market2.png'
 import market3 from '../../public/images/market3.png'
 import Image from 'next/image'
+
 export default function Section5() {
 	return (
 		<div className='w-full h-full'>

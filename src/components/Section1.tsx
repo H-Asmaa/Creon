@@ -1,3 +1,4 @@
+
 export default function Section1() {
 	return (
 		<div className="h-full w-full flex flex-col md:flex-row">
