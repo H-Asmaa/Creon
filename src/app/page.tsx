@@ -8,13 +8,13 @@ import "../styles/globals.css";
 
 export default function Home() {
 	return (
-		<div className='h-full'>
-			<Hero />
-			<Section1 />
-			<Section2 />
-			<Section3 />
-			<Section4 />
-			<Section5 />
+		<div className='w-full h-full'>
+			<Hero/>
+			<Section1/>
+			<Section2/>
+			<Section3/>
+			<Section3/>
+			<Section5/>
 		</div>
 	)
 }

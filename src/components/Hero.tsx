@@ -1,22 +1,15 @@
 export default function Hero() {
 	return (
-		<div className="absolute top-0 h-full">
-			<video className="z-0 h-full" autoPlay loop muted>
-				<source src="/videos/main-background-video.mp4" type="video/mp4" />
-			</video>
-			<div className="z-20 w-full h-full absolute top-0 bottom-0" style={{
-				background: 'linear-gradient(180deg, #000000 0%, #000000 56%, #3D8BFF 85%, #AB23FF 100%, #000000 100%)',
-				mixBlendMode: 'soft-light',
-				transform: 'rotate(-180deg)',
-			}}>
+		<div className="w-full h-full flex flex-col">
+			<div className="z-0 pt-56.25% overflow-hidden" >
+				<video autoPlay loop muted>
+					<source src="/videos/main-background-video.mp4" type="video/mp4" />
+				</video>
 			</div>
-			<div>
-				<h1 className="absolute text-white uppercase font-normal" style={{ fontFamily: 'Monument Extended', fontWeight: 400, fontSize: '50px', top: '60%', paddingLeft: '10%', paddingRight: '27%', lineHeight: '60px'}}>
-					The worlds first platform for Tokenizing AI blockchain projects
-				</h1>
-				<p className="Hero-section-paragraph">
-					Hold the Creon Pass NFT and earn passive income from AI Tools
-				</p>
+			<div className='absolute top-0 left-0 h-full w-full bg-gradient-to-br from-black via-[#3D8BFF] to-[#d819d5] mix-blend-soft-light transform rotate-180 md:h-[120%]' />
+			<div className="absolute pl-20 pt-[20%] z-20 w-full flex flex-col justify-end md:pt-[25%]">
+				<h1 className="h1">The worlds first platform for Tokenizing AI blockchain projects</h1>
+				<h5 className="">Hold the Creon Pass NFT and earn passive income from AI Tools</h5>
 			</div>
 		</div>
 	);
