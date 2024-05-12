@@ -18,7 +18,7 @@ export default function Section1() {
 			</div>
 			<div className="flex flex-wrap  w-full h-auto flex-col md:flex-row">
 				<video className="z-0 h-full pt-56.25% overflow-hidden" autoPlay loop muted>
-					<source src="/videos/nft-video.mp4" type="video/mp4" />
+					<source src="https://raw.githubusercontent.com/H-Asmaa/Creon/main/public/videos/nft-video.mp4" type="video/mp4" />
 				</video>
 			</div>
 		</div>

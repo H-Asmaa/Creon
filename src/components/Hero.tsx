@@ -3,7 +3,7 @@ export default function Hero() {
 		<div className="w-full h-full flex flex-col">
 			<div className="z-0 pt-56.25% overflow-hidden" >
 				<video autoPlay loop muted>
-					<source src="/videos/main-background-video.mp4" type="video/mp4" />
+					<source src="https://raw.githubusercontent.com/H-Asmaa/Creon/main/public/videos/main-background-video.mp4" type="video/mp4" />
 				</video>
 			</div>
 			<div className='absolute top-0 left-0 h-full w-full bg-gradient-to-br from-black via-[#3D8BFF] to-[#d819d5] mix-blend-soft-light transform rotate-180 md:h-[120%]' />

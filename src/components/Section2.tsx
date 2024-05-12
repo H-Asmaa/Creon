@@ -8,7 +8,7 @@ export default function Section2() {
 			<div className='flex flex-col md:flex-row h-full'>
 				<div className=" w-full h-full pt-10 pl-20 pr-20 pb-10 md:w-[65%]">
 					<video autoPlay loop muted>
-						<source src="/videos/creon-logo.mp4" type="video/mp4" />
+						<source src="https://raw.githubusercontent.com/H-Asmaa/Creon/main/public/videos/creon-logo.mp4" type="video/mp4" />
 					</video>
 				</div>
 				<div className="flex flex-wrap w-full h-full flex-col md:flex-row pt-10 pl-20 pr-20 pb-10 border-l border-r border-gray-500 md:w-[30%]">
