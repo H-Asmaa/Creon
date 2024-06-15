@@ -5,7 +5,7 @@ import "../styles/globals.css";
 import Link from 'next/link';
 import Image from 'next/image'
 import CreonLogo from '../../public/images/logo.png'
-import Soon from '../../public/images/soon.png'
+import Soon from '/images/soon.png'
 import { Menu } from 'lucide-react';
 
 
